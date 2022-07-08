@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import user.views
+import sinchonsite.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    # social login
     path('user/login', user.views.login_view, name='login'),
     path('user/logout', user.views.logout_view, name='logout'),
     path('user/signup', user.views.signup_view, name='signup'),

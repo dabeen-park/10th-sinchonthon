@@ -1,0 +1,33 @@
+{% load static %} {% block contents %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=390" , initial-scale="1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="{% css './static/main.css'%}" />
+	</head>
+	<body>
+		<head></head>
+		<div class="clock">
+			<div>
+				<!-- {% if ~ %} -->
+				<p>해커톤 신청까지</p>
+				<button>해커톤 신청하기</button>
+				<!-- {% elif ~ %} -->
+				<p>해커톤 시작까지</p>
+				<!-- {% else %} -->
+				<p>해커톤 종료까지</p>
+			</div>
+		</div>
+		<div class=""></div>
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<h1>hello world</h1>
+	</body>
+</html>
+{% endblock %}
