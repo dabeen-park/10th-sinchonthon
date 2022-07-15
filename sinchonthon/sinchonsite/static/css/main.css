@@ -1,0 +1,263 @@
+body {
+	text-align: center;
+	width: 512px;
+	margin: 0 auto;
+	background: #393737;
+}
+
+/* 신촌톤 메인 */
+.main-page {
+	width: 512px;
+	height: 254px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: #393737;
+}
+
+.title {
+	font-family: 'Song Myung', serif;
+
+	/* position: absolute; */
+	width: 55px;
+	height: 174px;
+
+	margin: 0 auto;
+
+	font-size: 50px;
+	line-height: 59px;
+
+	color: #ffffff;
+}
+
+.sinchonthon-series {
+	font-size: 20px;
+	position: absolute;
+	margin-top: 5px;
+	left: 0px;
+	width: 512px;
+}
+
+.sinchonthon-title {
+	font-size: 50px;
+	position: absolute;
+	/* left: px; */
+	top: 50px;
+}
+
+.sinchonthon-period {
+	font-size: 13px;
+	position: absolute;
+	margin-top: 210px;
+	/* left: 693px; */
+	/* margin-top: 5%; */
+}
+
+.countdown-page {
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	/* position: absolute; */
+	height: 268px;
+	/* left: 0px; */
+	/* top: 330px; */
+
+	background: #393737;
+	border: 1px solid #323232;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.timer {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	/* position: absolute;
+	left: 62px;
+	top: 345px; */
+	color: white;
+}
+
+.timer-notice {
+	margin-top: 10px;
+}
+
+.timer-highlight {
+	color: #ff9e1b;
+}
+
+.point {
+	font-size: 50px;
+}
+
+#applystart {
+	margin: 0 auto;
+	color: #ff9e1b;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#applyend {
+	/* position: absolute; */
+	width: 136px;
+	height: 36px;
+	/* left: 127px; */
+	/* top: 387px; */
+}
+
+#programstart {
+	/* position: absolute; */
+	width: 136px;
+	height: 36px;
+	/* left: 127px; */
+	/* top: 387px; */
+}
+
+.apply-guide {
+	font-size: 10px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.point-right {
+	position: absolute;
+	left: 550px;
+	top: 325px;
+}
+
+.point-left {
+	position: absolute;
+	left: 825px;
+	top: 325px;
+}
+
+.apply-button {
+	position: absolute;
+	top: 170px;
+	left: 305px;
+}
+
+.apply-guideline {
+	position: absolute;
+	top: 480px;
+	left: 635px;
+}
+
+#applystart {
+	color: #ff9e1b;
+	font-size: 25px;
+	position: absolute;
+	top: 310px;
+	left: 630px;
+}
+
+#applyend {
+	color: #ff9e1b;
+	font-size: 25px;
+}
+
+#programstart {
+	color: #ff9e1b;
+	font-size: 25px;
+}
+
+.management-page {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 30px;
+	color: white;
+	border: 1px solid #323232;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.management-title {
+	text-align: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.management-img {
+	/* position: absolute; */
+	width: 512px;
+	height: 337px;
+	background: #202021;
+	/* left: 22px;
+	top: 686px; */
+}
+
+.management-img-detail {
+	width: 346px;
+	height: 337px;
+}
+
+.pagination {
+	font-size: 16px;
+	color: #ff9e1b;
+}
+
+.about-sinchonthon {
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: left;
+}
+.about-title {
+	font-size: 30px;
+	color: #ff9e1b;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.about-semititle {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.about-contents {
+	width: 512px;
+	margin: 0 auto;
+	color: white;
+	font-size: 20px;
+	box-sizing: border-box;
+	background: #393737;
+	border: 1px solid #323232;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.about-content {
+	font-size: 13px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.sinchon-schools {
+	width: 512px;
+	height: 83px;
+	background: #2b2b2c;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.school {
+	width: 84px;
+	font-size: 13px;
+	padding: 5px;
+}
+.logo {
+	margin: 0 auto;
+}
+
+.sinchonthon-inform {
+	padding-top: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #323232;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.inform-title {
+	font-size: 30px;
+	text-align: center;
+	/* margin-left: 30px; */
+}
+
+.timeline {
+	margin-inline: 20%;
+	border-radius: 10px;
+	background-color: #ff9e1b;
+	color: black;
+	padding: 2% 0;
+	margin-bottom: 20px;
+}
+.highlight {
+	color: #ff9e1b;
+}

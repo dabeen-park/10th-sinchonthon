@@ -16,11 +16,12 @@ Including another URLconf
 # from django.urls.conf import include
 from django.contrib import admin
 from django.urls import path, include
+from sinchonsite.views import main
 import user.views
-import sinchonsite.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', main, name='main'),
     
     # social login
     path('user/login', user.views.login_view, name='login'),

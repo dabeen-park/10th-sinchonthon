@@ -1,34 +1,201 @@
-{% extends 'base.html' %} {% load static %} {% block head %}
+<!-- {% extends 'base.html' %} {% block head %} -->
+<!DOCTYPE html>
+<!-- {% load static %} -->
+<html>
+	<head>
+		<title>10th 신촌톤</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
 
-<title>10th 신촌톤</title>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
-<script src="../js/timer.js"></script>
-{% endblock %}
-<!-- </head> -->
-<!-- <body> -->
-{% block content %}
-<!-- {% if ~ %} -->
-<div class="timer">
-	신촌톤 지원 <span class="timer-highlight">시작</span>까지
-	<div id="applystart"></div>
-	<br />
-</div>
-<!-- {% elif ~ %} -->
-<div class="timer">
-	신촌톤 지원 <span class="timer-highlight">마감</span>까지
-	<div id="applyend"></div>
-	<br />
-</div>
-<!-- {% else %} -->
-<div class="timer">
-	신촌톤 <span class="timer-highlight">시작</span>까지
-	<div id="programstart"></div>
-	<br />
-</div>
-<!-- {% endif %} -->
-{% endblock %}
+		<!-- django static -->
+		<!-- <link rel="stylesheet" href="{% static '/css/main.css' %}" /> -->
+		<!-- <link rel="stylesheet" href="{% static 'css/timer.css' %}" /> -->
 
-<!-- </body> -->
-<!-- </html> -->
+		<!-- html으로 확인 -->
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<script src="../static/js/timer.js"></script>
+		<script src="../static/js/timeline.js"></script>
+		<!-- {% endblock %} -->
+
+		<!-- 폰트 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@500;700&family=Song+Myung&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- {% block content %} -->
+
+		<div class="main-page">
+			<div class="title">
+				<div class="sinchonthon-series">제10회</div>
+				<div class="sinchonthon-title">신<br />촌<br />톤<br /></div>
+				<div class="sinchonthon-period">8/27~8/28</div>
+			</div>
+		</div>
+		<div class="countdown-page">
+			<div class="timer">
+				<p class="timer-notice">
+					신촌톤 지원 <span class="timer-highlight">시작</span>까지
+				</p>
+				<div id="applystart"></div>
+				<div class="applystart-button">
+					<a href=""><img src="" alt="" /></a>
+				</div>
+				<div class="apply-guide">
+					<div class="point">
+						<p class="point-right">👉</p>
+						<a class="apply-button" href=""
+							><img
+								class="apply-button"
+								src="../static/img/apply-img.png"
+								width="204px"
+								height="145px"
+						/></a>
+						<p class="point-left">👈</p>
+					</div>
+					<p class="apply-guideline">위 버튼을 눌러 지원서를 작성해주세요</p>
+				</div>
+			</div>
+			<!-- 
+			<div class="timer">
+				신촌톤 지원 <span class="timer-highlight">마감</span>까지
+				<div id="applyend"></div>
+				<br />
+			</div>
+
+			<div class="timer">
+				신촌톤 <span class="timer-highlight">시작</span>까지
+				<div id="programstart"></div>
+				<br />
+			</div> -->
+		</div>
+		<div class="management-page">
+			<div class="management-title">
+				<span class="timer-highlight">신촌톤</span>을 준비한 분들
+			</div>
+			<div class="management-img">
+				<div class="img-container">
+					<ul class="slider">
+						<li class="managements">
+							<img
+								class="management-img-detail"
+								src="../static/img/manage-yonsei.png"
+							/>
+						</li>
+						<li class="managements">
+							<img
+								class="management-img-detail"
+								src="../static/img/manage-yonsei.png"
+							/>
+						</li>
+						<li class="managements">
+							<img
+								class="management-img-detail"
+								src="../static/img/manage-yonsei.png"
+							/>
+						</li>
+						<li class="managements">
+							<img
+								class="management-img-detail"
+								src="../static/img/manage-yonsei.png"
+							/>
+						</li>
+						<li class="managements">
+							<img
+								class="management-img-detail"
+								src="../static/img/manage-yonsei.png"
+							/>
+						</li>
+					</ul>
+				</div>
+				<script src="../static/js/slide.js"></script>
+			</div>
+			<div class="pagination">
+				<div>1 2 3 4 5</div>
+			</div>
+		</div>
+		<div class="about-sinchonthon">
+			<div class="about-contents">
+				<p class="about-title">신촌톤이란?</p>
+				<p class="about-semititle">신촌톤의 목적</p>
+				<p class="about-content">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p class="about-semititle">신촌톤 참여 대학</p>
+				<div class="sinchon-schools">
+					<div class="school">
+						<img class="logo" src="../static/img/logo-yonsei.png" />
+						<p>연세대학교</p>
+					</div>
+					<div class="school">
+						<img class="logo" src="../static/img/logo-sogang.png" />
+						<p>서강대학교</p>
+					</div>
+					<div class="school">
+						<img class="logo" src="../static/img/logo-ewha.png" />
+						<p>이화여자대학교</p>
+					</div>
+					<div class="school">
+						<img class="logo" src="../static/img/logo-hongik.png" />
+						<p>홍익대학교</p>
+					</div>
+				</div>
+				<div class="team">
+					<p class="about-semititle">팀 구성 방법</p>
+					<p class="about-content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					</p>
+				</div>
+				<div class="award">
+					<p class="about-semititle">수상 및 기준</p>
+					<p class="about-content">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					</p>
+				</div>
+				<div class="sinchonthon-inform">
+					<div class="detailed-inform">
+						<div class="inform-title">
+							<span class="highlight">신촌톤</span> 정보 모아보기
+						</div>
+						<img
+							class="sinchon-inform"
+							src="../static/img/sinchon-inform.png"
+						/>
+						<p class="timeline-notice">
+							자세한 타임라인이 궁금하다면?<br />아래 버튼을 클릭해보세요!
+						</p>
+						<button class="timeline-open">
+							진행 타임라인 한눈에 보기 ⏰👀
+						</button>
+						<div class="timeline-modal">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+								Consectetur quam nobis quis corrupti amet maxime neque, optio,
+								in illo, voluptatibus consequuntur! Rerum quo ea nulla qui,
+								maxime consectetur magni soluta!
+							</p>
+							<button class="close-modal">✖</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- {% endblock %} -->
+	</body>
+</html>
