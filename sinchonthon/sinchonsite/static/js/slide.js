@@ -1,22 +1,25 @@
-var slideWrapper = document.querySelector('.img-container');
-var slides = document.querySelectorAll('.managements');
-var totalSlides = slides.length; // item의 갯수
+var slides = document.querySelector('.slides');
+var slideImg = document.querySelectorAll('.slides li');
+let currentIdx = 0;
+// const prev = document.querySelector('.prev'); //이전 버튼
+// const next = document.querySelector('.next'); //다음 버튼
+const slideWidth = 3700; //한개의 슬라이드 넓이
+const slideMargin = 100; //슬라이드간의 margin 값
 
-var sliderWidth = slideWrapper.clientWidth; // container의 width
-var slideIndex = 0;
-var slider = document.querySelector('.slider');
+//전체 슬라이드 컨테이너 넓이 설정
+slides.style.width = (slideWidth + slideMargin) * slideCount + 'px';
 
-slider.style.width = sliderWidth * totalSlides + 'px';
-
-function showSlides() {
-	for (var i = 0; i < slides.length; i++) {
-		slider.style.left = -(sliderWidth * slideIndex) + 'px';
-	}
-	slideIndex++;
-	if (slideIndex === totalSlides) {
-		slideIndex = 0;
-	}
-	setTimeout(showSlides, 2000);
+function moveSlide(num) {
+	slides.style.left = -num * 400 + 'px';
+	currentIdx = num;
 }
 
-showSlides();
+prev.addEventListener('click', function () {
+	if (currentIdx !== 0) moveSlide(currentIdx - 1);
+});
+
+next.addEventListener('click', function () {
+	if (currentIdx !== slideCount - 1) {
+		moveSlide(currentIdx + 1);
+	}
+});
