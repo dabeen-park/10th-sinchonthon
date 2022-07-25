@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="medii-part3">
+
+    <article class="start">
+        <div class='title_word'>
+            <p>신촌톤</p>
+        </div>
+        <div id="yh">
+            <p class="word_1">연세대 X 서강대 X 이화여대 X 홍익대 <br>
+                멋쟁이사자처럼 대학 10가 연합 해커톤</p>
+        </div>
+
+        <div style="position:relative; left: 85px; top:70px;">
+            <img src="{% static 'img/ll_logo.png'%}" alt="">
+        </div>
+
+
+        <div class="입금안내판" style="text-align:center">
+
+            <p class="word_1" id="sin1">신청 정보가 입력되었습니다.<br>
+                <span class="ingredient">참가비 입금 후</span>에 참가 신청이 완료됩니다.
+            </p>
+
+            <p class="참가비" style="top:83px; left:28px;">참가비 : <span class="ingredient">10,000원 </span>💰</p>
+            <p class="참가비2 " id="참1" style="top:131px; left:26px;">계좌 : 멋사은행 0000000000000</p>
+            <p class="참가비2 " id="참2" style="top:177px; left:26px;">입금명 : <span class="ingredient">00대학교 - 김철수
+                    형식</span></p>
+
+        </div>
+
+
+
+
+    </article>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,389 @@
+/* .total_box {
+    display: flex;
+    flex-direction: column;
+} */
+
+nav {
+
+    width: 390px;
+    height: 59px;
+    left: 0px;
+    top: 0px;
+
+    background: #403D3C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+}
+
+.logo {
+
+    position: relative;
+    width: 51px;
+    height: 51px;
+    left: 15px;
+    top: 2px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 287px;
+    top: 10px;
+}
+
+.medii-part {
+    display: flex;
+    flex-direction: column;
+    height: 647.29px;
+    width: 387.06px;
+    background:
+        url(/static/img/back_1.png) no-repeat -0.5px 440px,
+        url(/static/img/back_2.png) no-repeat 203px -50px,
+        url(/static/img/back_img.png);
+
+
+
+}
+
+
+.word1-box {
+    position: relative;
+
+    top: 90.71px;
+}
+
+.word1 {
+    position: relative;
+    /* width: 276px;
+    height: 129px; */
+
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+span.ingredient {
+    color: #FF9E1B;
+}
+
+footer {
+
+    width: 390px;
+    height: 137px;
+    left: 0px;
+    top: 707px;
+
+    background: #2B2B2C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.camga_click {
+    position: relative;
+    top: 110px;
+    text-align: center;
+}
+
+.word2 {
+    color: #FFFFFF;
+
+
+
+
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+
+}
+
+.word2-box {
+    position: relative;
+    top: 96px;
+    text-align: center;
+}
+
+.word1-box2 {
+    position: relative;
+    top: 115px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.word3-1 {
+    position: relative;
+
+    top: 7px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+.word3-2 {
+    position: relative;
+
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+.word3-3 {
+    position: relative;
+
+    top: -8px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+}
+
+.word3-4 {
+
+    position: relative;
+
+    top: -20px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.ll_lo {
+    position: relative;
+
+    left: 43px;
+    top: -42px;
+}
+
+.next {
+    display: none;
+}
+
+.mypage-center-box {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 390px;
+    height: 223px;
+    left: 0px;
+    top: 136px;
+
+    background: #393737;
+    border: 1px solid #323232;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.참가비 {
+    position: absolute;
+    left: 34px;
+    top: 34px;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.참가비2 {
+
+    position: absolute;
+    left: 34px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#참1 {
+    top: 95px
+}
+
+#참2 {
+    top: 145px
+}
+
+.word4 {
+    position: relative;
+
+
+    top: 153px;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.medii-part2 {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.mypage3 {
+    position: relative;
+    height: 502.21px;
+
+    top: 17px;
+
+    background: url(/static/img/mypage3_background.png);
+
+}
+
+.word_1 {
+    position: relative;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+
+
+
+    color: #FFFFFF;
+}
+
+#mschool {
+    font-size: 30px;
+    line-height: 43px;
+    left: 19px;
+    top: 21px;
+}
+
+#mname {
+    color: #FF9E1B;
+    font-size: 25px;
+    line-height: 36px;
+    left: 25px;
+    top: 7px;
+
+
+}
+
+#mposi {
+    left: 25px;
+    top: -7px;
+    font-size: 23px;
+    line-height: 33px;
+}
+
+.school_card_im {
+    position: relative;
+    top: -80px;
+}
+
+.t_b_butt {
+    position: relative;
+    top: -115px
+}
+
+.team_result {
+    box-sizing: border-box;
+
+    position: relative;
+    width: 390px;
+    height: 223px;
+    left: -1px;
+
+
+    background: #393737;
+    border: 1px solid #323232;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#team {
+    display: none;
+    /* 나중에 풀기 */
+}
+
+.team_box {
+    /*전체를 감싼 부모*/
+    position: relative;
+    top: 17px;
+    display: block;
+
+}
+
+#Nteam {
+    position: relative;
+    top: 18px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.team_ele {
+    /*부모안의 자식 class*/
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+#twiths {
+    position: relative;
+    left: 25px
+}
+
+#twithp {
+    position: relative;
+    left: 35px;
+}

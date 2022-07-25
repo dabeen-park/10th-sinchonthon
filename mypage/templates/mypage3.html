@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="medii-part2">
+
+    <div class="mypage3 mb-5">
+        <p class="word_1" id="mschool">서강대학교</p>
+        <p class="word_1" id="mname">홍 길 동 🦁</p>
+        <p class="word_1" id="mposi">Backend Developer 🛠</p>
+        <img class="school_card_im" src="{% static 'img/school/sogang_m.png'%}" alt="">
+        <div class="t_b_butt" style="text-align:center;">
+            <img onclick='team();' src="{% static 'img/button/t_b_button.png'%}" alt="">
+        </div>
+    </div>
+
+    <div class="team_result mb-4" id="team">
+        <div>
+            <p class="word_1" id="Nteam">N팀</p>
+        </div>
+        <div class="team_box">
+            <div class="team_ele">
+                <p class="word_1" id="twiths"><span class="ingredient">연세대학교</span> 김가나 <br>
+                    <span class="ingredient">서강대학교</span> 김다라 <br>
+                    <span class="ingredient">이화여자대학교</span> 김마바 <br>
+                    <span class="ingredient">홍익대학교</span> 김사아
+                </p>
+            </div>
+            <div class="team_ele" id="twithp">
+                <p class="word_1">기획디자인 <br>
+                    프론트엔트 <br>
+                    백엔드 <br>
+                    백엔드</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+<script>
+    function team() {
+        $("#team").show()
+    }
+
+</script>
+{% endblock %}

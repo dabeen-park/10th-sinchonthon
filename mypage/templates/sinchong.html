@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="medii-part3">
+
+    <article class="start">
+        <div class='title_word'>
+            <p>신촌톤</p>
+        </div>
+        <div id="yh">
+            <p class="word_1">연세대 X 서강대 X 이화여대 X 홍익대 <br>
+                멋쟁이사자처럼 대학 10가 연합 해커톤</p>
+        </div>
+
+        <div style="position:relative; left: 85px; top:70px;">
+            <img src="{% static 'img/ll_logo.png'%}" alt="">
+        </div>
+
+
+
+        <select type="text" id="centSchool" class="내림바" placeholder="대학">
+            <option selected>대학</option>
+            <option value="1">서강대학교</option>
+            <option value="2">연세대학교</option>
+            <option value="3">이화여자대학교</option>
+            <option value="4">홍익대학교</option>
+        </select>
+
+        <input type="text" id="centName" class="내림바" placeholder="이름">
+
+        <select input type="text" id="centTrack" class="내림바" placeholder="트랙">
+            <option selected>트랙</option>
+            <option value="1">백엔드</option>
+            <option value="2">프론트엔드</option>
+            <option value="3">기획/디자인</option>
+
+        </select>
+
+        <input type="text" id="centTalk" class="내림바" placeholder="각오 한마디!">
+
+        <button class="신청button" type="submit">신청하기</button>
+
+
+
+    </article>
+
+
+</div>
+{% endblock %}
